@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+.icon_head,
+.computer_ok,
+.computer_ok_2,
+.icon_footer,
+.blacklist,
+.snippets,
+.sneak,
+.google,
+.ibm,
+.microsoft,
+.hewlett,
+.vector,
+.facebook,
+.twitter,
+.insta {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree";
+  font-size: 18px;
+  font-weight: 400;
+  color: hsl(201, 11%, 66%);
+  text-align: center;
+}
+
+h1 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 1.8em;
+}
+h3 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+  font-size: 1.8em;
+}
+
+button {
+  width: 18rem;
+  color: white;
+  height: 3rem;
+  border-radius: 50px;
+}
+.b1 {
+  background-color: hsl(171, 66%, 44%);
+  border: hsl(171, 66%, 44%);
+  box-shadow: 1px 1px 5px hsl(171, 66%, 44%);
+}
+.b2 {
+  background-color: hsl(233, 100%, 69%);
+  border: hsl(233, 100%, 69%);
+  box-shadow: 1px 1px 5px hsl(233, 100%, 69%);
+}
+
+.bg-image {
+  background-image: url(./images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0px;
+  width: 100vw;
+  height: 600px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header > div,
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin: 5rem 1rem 5rem 1rem;
+}
+
+.features {
+  margin: 1.5rem;
+  gap: 1rem;
+}
+.features,
+.features div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_head {
+  background-image: url(./images/logo.svg);
+}
+
+.computer_ok {
+  background-image: url(./images/image-computer.png);
+  width: 300px;
+  height: 250px;
+}
+.computer_ok_2 {
+  background-image: url(./images/image-devices.png);
+  width: 300px;
+  height: 200px;
+}
+
+.blacklist {
+  background-image: url(./images/icon-blacklist.svg);
+  width: 30px;
+  height: 30px;
+}
+.snippets {
+  background-image: url(./images/icon-text.svg);
+  width: 30px;
+  height: 30px;
+}
+.sneak {
+  background-image: url(./images/icon-preview.svg);
+  width: 30px;
+  height: 30px;
+}
+.google {
+  background-image: url(./images/logo-google.png);
+}
+.ibm {
+  background-image: url(./images/logo-ibm.png);
+}
+.microsoft {
+  background-image: url(./images/logo-microsoft.png);
+}
+.hewlett {
+  background-image: url(./images/logo-hp.png);
+}
+.vector {
+  background-image: url(./images/logo-vector-graphics.png);
+}
+.icon_footer {
+  background-image: url(./images/logo.svg);
+  width: 60px;
+  height: 60px;
+}
+
+.facebook {
+  background-image: url(./images/icon-facebook.svg);
+  width: 30px;
+  height: 30px;
+}
+.twitter {
+  background-image: url(./images/icon-twitter.svg);
+  width: 30px;
+  height: 30px;
+}
+.insta {
+  background-image: url(./images/icon-instagram.svg);
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 1.5rem;
+}
+footer {
+  background-color: hsl(171, 66%, 44%, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem 0 3rem 0;
+  padding: 2rem;
+  gap: 10px;
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  gap: 30px;
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 370px) {
+  header {
+    background: url(./images/bg-header-desktop.png);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+  }
+
+  .btn {
+    flex-direction: row;
+  }
+
+  header > div {
+    max-width: 50%;
+  }
+
+  header p {
+    width: 50%;
+  }
+
+  .track {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .computer_ok {
+    width: 50%;
+    height: 400px;
+  }
+
+  .track div:nth-child(2),
+  .track h3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 500px;
+    gap: 10px;
+    /* margin: 1rem 0 1rem 0;*/
+  }
+
+  .features {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+  }
+  .features > div {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icons {
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+  }
+
+  computer_ok_2 {
+    width: 700px;
+    height: 750px;
+    background-size: contain;
+  }
+}
